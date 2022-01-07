@@ -1,0 +1,39 @@
+runtime: java11
+module: 'default'
+instance_class: F4_1G
+automatic_scaling:
+  min_pending_latency: 30ms
+  max_pending_latency: automatic
+  min_idle_instances: 0
+  max_idle_instances: 1
+  max_concurrent_requests: 50
+derived_file_type:
+- java_precompiled
+auto_id_policy: default
+handlers:
+- url: (/.*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: optional
+- url: /
+  script: unused
+  login: optional
+  secure: optional
+- url: /.*/
+  script: unused
+  login: optional
+  secure: optional
+- url: /_ah/.*
+  script: unused
+  login: optional
+  secure: optional
+- url: .*\.jsp
+  script: unused
+  login: optional
+  secure: optional
+- url: /cronExtractNew
+  script: unused
+  login: optional
+  secure: optional

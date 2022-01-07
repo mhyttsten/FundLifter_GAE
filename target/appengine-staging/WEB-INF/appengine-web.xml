@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+    <application>allthingsconsidered</application>
+    <runtime>java11</runtime>
+    <version>1</version>
+    <threadsafe>true</threadsafe>
+    <warmup-requests-enabled>false</warmup-requests-enabled>
+
+    <system-properties>
+        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+        <property name="org.eclipse.jetty.server.Request.maxFormKeys" value="40000"/> <!-- OBS: Important to support changing URL/name with big lists, e.g. PPM -->
+    </system-properties>
+
+    <module>default</module>
+    <instance-class>F4_1G</instance-class>
+    <automatic-scaling>
+        <!-- ‘automatic’ is the default value. -->
+        <min-idle-instances>0</min-idle-instances>
+        <max-idle-instances>1</max-idle-instances>
+        <min-pending-latency>30ms</min-pending-latency>
+        <max-pending-latency>automatic</max-pending-latency>
+        <max-concurrent-requests>50</max-concurrent-requests>
+    </automatic-scaling>
+</appengine-web-app>

@@ -1,0 +1,5 @@
+cron:
+- description: 'Cron_Extract_New'
+  url: /cronExtractNew?ignoreSchedule=true&timeInSBeforeDeadline=500
+  schedule: every 10 minutes from 11:10 to 16:10
+  timezone: America/Los_Angeles

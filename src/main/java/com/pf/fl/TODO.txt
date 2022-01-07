@@ -1,0 +1,70 @@
+- New site: Add Fund index to DB (not MS index, but the funds index)
+- New site, Cannot extract Morningstar rating, PPM number (in title of fund name)
+- New site: For yearly numbers, add %-rank i kategorin
+
+
+
+-------
+- Add extraction report after extraction at top of debug file
+- Add clear tags for each section
+
+Backend:
+- Harden logging policies of FLOps1_Ext1_Extract_Now
+  What is logged
+  What is detailed (and what is that used for, a master log file?)
+
+
+- Thursday fix: Change extract time to when those turn into Friday + also mobile cache considerations
+- Install latest AppEngine SDK
+
+App:
++ Ok now we have this local file filled with deduced dates and nulls
+- App: Add FundRank winner in Portfolio screen + scrollbar to change time window
+- App: Verify FundRank numbers
+- App: Add extraction info on main screen (after portfolio, at least with fridayYYMMDD and #total/#extracted/#left)
+
+- App: Create startup screen with MemoryRocker & FundLifter split screen (as TAB)
+- Update SEB, PPM, VGD, SPP fundlists + provide yearly process
+
+Cosmetics
+- App: Display Portfolio: Fund name gets truncated (should not) + show orig fundname when swiping over it
+
+--------
+- Android Studio error: Cannot find activity when installing on phone: Go to settings on phone and remove the app
+- Work with fund indexes? A lot to potentially do here
+- Main screen: Show Rank winners per index/region/category ?
+Ryssland
+China
+Japan
+Europa
+USA
+Sverige
+Gold
+Healthcare
+Biotech
+Technology
+Latinamerika
+Indien
+BRIC
+Asien ex Japan
+Japan
+
+------------------------------------------------------------------------------
+VBO Buy and Sell
+- Trade Vanguard funds in your SDBO account
+  OK: Drop down list of funds (that can be saved to HTML)
+- Trade non-Vanguard funds via FundAccess
+  Ok: Drop down list of fund companies
+  When selecting company you get another list of their funds
+- Trade Vanguard ETFs (and non-Vanguard ETFs)
+  Not Ok: You have to specify symbol (where do we get such list?)
+- Trade stocks and listed securities
+  Not Ok: You have to specify symbol (where do we get such list?)
+- Trade options
+  Not Ok: You don't have access
+- Trade bounds or CDs
+  Not Ok: I don't even know what this is
+
+Other funds: https://personal.vanguard.com/us/secfunds/other/bytype?FundFamilyId=6082&view=Name&pageNumber=2
+Morningstar: https://www.morningstar.com/funds/XNAS/VTWSX/betaquote.html
+Vanguard Mutual Funds: https://investor.vanguard.com/mutual-funds/list?view=avgann&sort=name&sortorder=asc#/mutual-funds/name/month-end-returns

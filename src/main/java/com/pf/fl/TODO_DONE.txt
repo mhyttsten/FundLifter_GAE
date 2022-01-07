@@ -1,0 +1,29 @@
+
+- Changed true Vanguard funds to start with 'Vanguard'
+  (we could do this more accurately at extraction with VGD_GetFundName)
+
+- Yearly process for fund db
+   + Vanguard & FundAccess funds
+
+- Edit URL/name etc, with large # entries (e.g. PPM) gave error in Jetty (form & too many ids)
+  To fix, added this to appengine-web.xml: <property name="org.eclipse.jetty.server.Request.maxFormKeys" value="40000"/> <!-- OBS: Important to support changing URL/name with big lists, e.g. PPM -->
+- ExtractDebugger is done
+- Make the (R) registered sign go away
+  Caused by &reg being present in HTML output, need to perform .replace("&", ""&amp;")
+- Difficulty displaying Å, Ä, Ö, å, ä, ö
+  Caused by not being proper utf-8. Always use JSP file (with UTF-8), never use hardcoded servlet (which seems to want to use iso-8859...)
+- Errored funds should become invalid second time around
+
+
+***********
+- Remove invalids
+Invalids. Count: 3.
+[0]: PPM.Movestic Bear 2.0 C, updated: 180309, attempted: 180408, valid
+...https://www.morningstar.se/Funds/Quicktake/Overview.aspx?perfid=0P000199N5&programid=0000000000
+[1]: PPM.Movestic Bull 2.0 C, updated: 180309, attempted: 180408, valid
+...https://www.morningstar.se/Funds/Quicktake/Overview.aspx?perfid=0P000199N7&programid=0000000000
+[2]: PPM.Simplicity Asien, updated: 180309, attempted: 180408, valid
+...https://www.morningstar.se/Funds/Quicktake/Overview.aspx?perfid=0P00006TX0&programid=0000000000
+--> Deleted first 2, set 3rd to Valid
+--> Reinitialized DB, and did not show up in Show Invalid URLs anymore
+--> Deleted GAE instance, restarted, did not show up anymore

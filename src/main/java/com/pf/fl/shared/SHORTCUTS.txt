@@ -1,0 +1,5 @@
+- CTRL-TAB
+- Cmd-F12
+- Cmd-O Search for class name
+- Opt-F7 Find usages
+

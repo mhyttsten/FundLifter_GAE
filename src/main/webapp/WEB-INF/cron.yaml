@@ -1,0 +1,17 @@
+#cron:
+#- url: '/cronExtractNew?ignoreSchedule=true&timeInSBeforeDeadline=500'
+#  schedule: 'every 10 minutes from 00:10 to 23:50'
+#  timezone: 'America/Los_Angeles'
+#  description: 'Cron_Extract_New'
+
+cron:
+- url: '/cronExtractNew?ignoreSchedule=true&timeInSBeforeDeadline=500'
+  schedule: 'every 10 minutes from 21:00 to 02:00'
+  timezone: 'America/Los_Angeles'
+  description: 'Cron_Extract_New'
+
+#cron:
+#- url: '/cronExtractNew?ignoreSchedule=true&timeInSBeforeDeadline=500'
+#  schedule: 'every 10 minutes from 11:10 to 16:10'
+#  timezone: 'America/Los_Angeles'
+#  description: 'Cron_Extract_New'

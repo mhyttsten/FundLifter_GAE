@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+
+    <!-- JSPC servlet mappings start -->
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fOperation_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fOperation_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fIndex_005fDisplayFundsForIndex_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fIndex_005fDisplayFundsForIndex_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fExtractDebugger_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fExtractDebugger_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fIndex_005fDisplayAll_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fIndex_005fDisplayAll_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fFundList_005fValidate_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fFundList_005fValidate_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.index_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fReport02_005fWeekly_005fDisplay_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fReport02_005fWeekly_005fDisplay_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fFunds_005fDisplay_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fFunds_005fDisplay_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fDisplayFundDB_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fDisplayFundDB_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fFundURLData_005fDisplay_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fFundURLData_005fDisplay_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fReport_005fLastFriday_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fReport_005fLastFriday_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fFundURLData_005fVGAddNames_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fFundURLData_005fVGAddNames_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.JSP_005fMain_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.JSP_005fMain_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fOperation_jsp</servlet-name>
+        <url-pattern>/JSP_Operation.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fIndex_005fDisplayFundsForIndex_jsp</servlet-name>
+        <url-pattern>/JSP_Index_DisplayFundsForIndex.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fExtractDebugger_jsp</servlet-name>
+        <url-pattern>/JSP_ExtractDebugger.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fIndex_005fDisplayAll_jsp</servlet-name>
+        <url-pattern>/JSP_Index_DisplayAll.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fFundList_005fValidate_jsp</servlet-name>
+        <url-pattern>/JSP_FundList_Validate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fFunds_005fDisplay_jsp</servlet-name>
+        <url-pattern>/JSP_Funds_Display.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fReport02_005fWeekly_005fDisplay_jsp</servlet-name>
+        <url-pattern>/JSP_Report02_Weekly_Display.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fDisplayFundDB_jsp</servlet-name>
+        <url-pattern>/JSP_DisplayFundDB.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fFundURLData_005fDisplay_jsp</servlet-name>
+        <url-pattern>/JSP_FundURLData_Display.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fReport_005fLastFriday_jsp</servlet-name>
+        <url-pattern>/JSP_Report_LastFriday.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fFundURLData_005fVGAddNames_jsp</servlet-name>
+        <url-pattern>/JSP_FundURLData_VGAddNames.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.JSP_005fMain_jsp</servlet-name>
+        <url-pattern>/JSP_Main.jsp</url-pattern>
+    </servlet-mapping>
+
+<!-- JSPC servlet mappings end -->
+
+<welcome-file-list>
+        <welcome-file>JSP_Main.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>cronExtractServlet_New</servlet-name>
+        <servlet-class>com.pf.fl.appengine.servlet.CronExtractServlet_New</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cronExtractServlet_New</servlet-name>
+        <url-pattern>/cronExtractNew</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
